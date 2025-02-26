@@ -1,0 +1,65 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1b1107; /* Semi-transparent */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container .logo {
+  height: 50px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu ul li {
+  display: inline;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu ul li a:hover {
+  color: #00bcd4;
+}
+
+.logout-btn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 10px; /* Match link font size */
+  cursor: pointer;
+  padding: 0; /* Remove extra padding */
+  margin-left: 15px; /* Add spacing between links */
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.logout-btn:hover {
+  color: red; /* Match hover effect with other links */
+  text-decoration: underline;
+}
+
+body {
+  padding-top: 80px; /* Adjust based on header height */
+}

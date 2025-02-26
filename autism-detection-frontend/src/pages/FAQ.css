@@ -1,0 +1,80 @@
+/* Apply background to the entire page */
+.faq-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content properly */
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Page background */
+    padding-top: 130px;
+    padding-bottom:50px;
+    
+  }
+  
+  /* FAQ Box */
+  .faq-container {
+    max-width: 700px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Dark box */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(79, 172, 254, 0.7);
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Title */
+  .faq-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00f2fe;
+    text-shadow: 0px 0px 8px rgba(0, 242, 254, 0.8);
+  }
+  
+  /* FAQ List */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* FAQ Item */
+  .faq-item {
+    background: rgba(0, 242, 254, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    max-width: 100%;
+    word-wrap: break-word; /* Break long words */
+  }
+  
+  .faq-item:hover {
+    border: 1px solid #00f2fe;
+  }
+  
+  /* Question */
+  .faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Answer */
+  .faq-answer {
+    font-size: 16px;
+    margin-top: 8px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    max-width: 100%;
+    word-wrap: break-word; /* Prevents text overflow */
+    white-space: normal; /* Allows line wrapping */
+    line-height: 1.5; /* Improves readability */
+  }
+  
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+  

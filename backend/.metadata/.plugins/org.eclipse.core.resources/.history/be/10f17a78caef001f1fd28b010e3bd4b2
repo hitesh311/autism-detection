@@ -1,0 +1,5 @@
+package com.hitesh.backend.controller;
+
+public class ImageClassificationController {
+
+}

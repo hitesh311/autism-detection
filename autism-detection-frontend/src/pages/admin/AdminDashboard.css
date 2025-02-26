@@ -1,0 +1,125 @@
+/* Admin Dashboard - Cyberpunk Glow Theme */
+.admin-dashboard {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.admin-header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.admin-container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.admin-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.admin-section h2 {
+    font-size: 20px;
+    color: cyan;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px cyan;
+}
+
+.admin-btn {
+    background: rgba(0, 255, 255, 0.8);
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.admin-btn:hover {
+    background: rgba(0, 255, 255, 1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-table th {
+    background: rgba(0, 0, 0, 0.6);
+    color: cyan;
+    text-shadow: 0 0 5px cyan;
+}
+
+.admin-table tr:hover {
+    background: rgba(0, 255, 255, 0.1);
+}
+
+/* Scrollbar Styling */
+.admin-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.admin-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+.admin-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 1);
+}
+.logout-btn {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 16px; /* Match menu item size */
+    cursor: pointer;
+    padding: 0; /* Remove extra spacing */
+    margin: 0; /* Align with other links */
+    text-decoration: none;
+    font-family: inherit;
+  }
+  
+  .logout-btn:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  /* Align the nav menu properly */
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Ensures buttons and links are aligned */
+    gap: 20px; /* Spaces out items evenly */
+  }
+  

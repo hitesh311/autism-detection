@@ -1,0 +1,144 @@
+/* Full-page layout */
+.dashboard-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: Arial, sans-serif;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  width: 500px;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(79, 172, 254, 0.7);
+  color: white;
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  font-size: 26px;
+  color: #00f2fe;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.8);
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* File input (Hidden) */
+input[type="file"] {
+  display: none;
+}
+
+/* File Selection Button */
+.file-label {
+  display: inline-block;
+  background: #ffcc00;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+  margin-top: 10px;
+}
+
+.file-label:hover {
+  background: #ffaa00;
+}
+
+/* Upload & Signup Buttons */
+.upload-btn,
+.signup-btn {
+  background: #00f2fe;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 6px;
+  margin-top: 15px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  width: 100%;
+}
+
+.upload-btn:hover,
+.signup-btn:hover {
+  background: #4facfe;
+}
+
+/* Classification Result Box */
+.classification-result {
+  flex: 1;
+  padding: 15px;
+  background: rgba(0, 242, 254, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  width: 60%;
+}
+
+/* Autism detected */
+.classification-result.autism {
+  color: red;
+  text-shadow: 0 0 10px red;
+}
+
+/* No autism detected */
+.classification-result.no-autism {
+  color: green;
+  text-shadow: 0 0 10px green;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .dashboard-container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  .upload-btn,
+  .signup-btn {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 22px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
+
+
+.uploaded-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  object-fit: cover;
+}
+
+.classification-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}

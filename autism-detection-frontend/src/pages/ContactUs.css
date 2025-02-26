@@ -1,0 +1,89 @@
+.contact-container {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .contact-title {
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color:rgb(18, 44, 46);
+    text-shadow: 0 0 10pxrgb(28, 56, 58), 0 0 20px #4facfe;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .team-card {
+    position: relative;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+  }
+  
+  .card-glow {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    filter: blur(10px);
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  .team-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #00f2fe;
+    box-shadow: 0 0 10px #00f2fe;
+    margin-bottom: 15px;
+  }
+  
+  .team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00f2fe;
+  }
+  
+  .team-degree {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  .team-email {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4facfe;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .team-email:hover {
+    color: #00f2fe;
+    text-shadow: 0 0 5px #00f2fe;
+  }
+  

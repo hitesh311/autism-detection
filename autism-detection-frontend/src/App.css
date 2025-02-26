@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Logo styles */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Animation for logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34;
+  flex: 0 1 auto; /* This allows the header to take as much space as needed, without stretching */
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+/* App link style */
+.App-link {
+  color: #61dafb;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  /* Ensure it stays at the bottom */
+  flex: 0 1 60px; /* Give footer a fixed height */
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main content styles */
+.main-content {
+  flex: 1; /* Allow this content to take remaining space */
+  padding-bottom: 60px; /* To avoid overlap with footer */
+}
+
+/* Keyframe for logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
